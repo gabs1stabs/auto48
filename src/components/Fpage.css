@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+
+}
+.full-page {
+    background-image: url('/public/pics/bkg1.png');
+    background-size:100% 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; 
+    height: 100vh; 
+    font-family: 'Turret Road', sans-serif;
+  }
+.logo{
+    position:absolute;
+    height: 120px;
+    width: 140px;
+    left: 560px;
+    top: 100px;
+}
+.div1{
+    position: absolute;
+    top: 265px;
+    left: 400px;
+    width: 500px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.brd1{
+    position: absolute;
+    top: 240px;
+    left: 390px;
+    height: 130px;
+    width: 500px;
+    background-color: transparent;
+}
+.btn1{
+    position: absolute;
+    top: 390px;
+    left: 549px;
+    height: 50px;
+    width: 170px;
+    background-color: red;
+    background-image: linear-gradient(45deg, rgb(129, 43, 43) ,rgb(255, 9, 9), rgb(255, 9, 9),rgb(255, 9, 9),rgb(129, 43, 43));
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px white; 
+    font-size: 15px;
+    font-family: 'Turret Road', sans-serif;
+    font-weight: 700;
+
+
+}
+
+
+@media screen and (max-width: 768px){
+    .full-page {
+      background-size:100% 130%;
+      background-position: center;
+    }
+    .logo{
+      position:relative;
+      height: 100px;
+      width: 120px;
+      left: 315px;
+      top: 100px;
+  }
+    
+  }
+  

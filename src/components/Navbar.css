@@ -1,0 +1,203 @@
+.nv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white !important;
+  font-family: 'Turret Road', sans-serif;
+  z-index: 1000; 
+}
+.app__navbar1 {
+  background-image: linear-gradient(to right, #c23434, #8e0d0d);
+  padding: 12px;
+  width: 100%;
+  position: relative; 
+}
+.ic1, .ic2, .ic3 {
+  height: 23px;
+  width: 23px;
+  margin-left: 6px;
+}
+.line1, .line2 {
+  width: 180px;
+  height: 13px;
+  margin-bottom: 3px;
+}
+.line1 {
+  margin-left: 70px;
+}
+.ic4, .ic41, .ic42 {
+  height: 20px;
+  width: 25px;
+}
+.n1, .n2, .c1 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  bottom:  3px;
+}
+.app__navbar2 {
+  width: 60%;
+  margin: 30px auto;
+  position: relative;
+  margin-top: 50px;
+}
+.langSwitch{
+  position: absolute;
+  left: 1150px;
+  top: 7px;
+}
+.app__navbar__links1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app__navbar__links1 .left,
+.app__navbar__links1 .right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+
+
+
+.app__navbar__links1 .left li,
+.app__navbar__links1 .right li {
+  margin: 0 15px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Fixed logo container to keep the logo in place */
+.app__navbar_logo {
+  position: relative;
+  right:  605px;
+  bottom: 140px;
+  z-index: 1;
+   
+}
+
+/* Logo image styling */
+.logo {
+  width: 100px; 
+  height: 80px;
+  
+}
+body{
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 700;
+  overflow-x: hidden
+}
+.pr {
+  font-size: 16px;
+  width: 550px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 200px; /* Fixed */
+  transform: translateX(-50%);
+  border-top: 2px solid;
+  padding: 13px 10px;
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(to right, white, red, white);
+  border-image-slice: 1;
+  z-index: 10;
+  
+}
+
+.bef-af{
+  position: relative;
+  top: 230px;
+  z-index: 1;
+}
+.before-car{
+  width: 100%;
+  margin: 0;
+  height: 500px;
+  
+}
+.after-car{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  inset: 0;
+
+}
+.slider{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px; 
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-50%);
+}
+.slider-ball {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 50%;  
+  transform: translateX(-50%);  
+}
+.arrows{
+  width: 26px;
+  height: 13px;
+  position: relative;
+  top: 16px;
+  left:12px;
+}
+.slider-bar {
+  background-color: black;
+  box-sizing: border-box;    
+  white-space: nowrap;
+  padding: 5px 0;
+  width: 100%;
+  position: relative;
+  margin-top: 230px ;
+}
+.list{
+  display: inline-block;
+  animation: 6s slide infinite linear;
+}
+.slider-bar:hover .list{
+  animation-play-state: paused;
+}
+
+.slider-bar .list img{
+  width:100px;
+  height: 70px;
+  margin: 0 40px;
+}
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+.blur-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), transparent);
+  z-index: 5;
+}
+
+
