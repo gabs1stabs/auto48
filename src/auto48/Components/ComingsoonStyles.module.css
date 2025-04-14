@@ -1,0 +1,143 @@
+
+    
+
+body{
+  
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  
+}
+body ::-webkit-scrollbar {
+  display: none; 
+}
+.pbg{
+  position: relative;
+  top: -46.99rem;
+}
+  
+ 
+  .CompanyLogo{
+    position: relative;
+    top: -91.7rem;
+    left: 36rem;
+   justify-content: center;
+   align-items: center;
+  }
+  .redV{
+    position: relative;
+    top: -94.4rem;
+    left: 24.2rem;
+    width: 557.66px;
+    height: 62.26px;
+
+  }
+  .bgFc{
+    position: relative;
+    right: 3.2px ;
+    top: -2.7rem;
+  }
+  .bgtiktok{
+    position: relative;
+    top: -2.6rem;
+    right:3.2px ;
+    width:145px;
+    height: 35px;
+  }
+  
+  .tiktok{
+    width:145px;
+    height: 35px;
+  }
+  .contact{
+    display: flex;
+    position: relative;
+    top: -101rem;
+    left: 62.5rem;
+    width: 245PX;
+  }
+  .comingP{
+    font-family: NEO CYBERN;
+    font-weight: 400;
+    font-size: 85.67px;
+    line-height: 92.82px;
+    letter-spacing: 10%;
+    position: relative;
+    top: -94rem;
+    left: 19rem;
+  } 
+  .DescP{
+    font-family: Turret Road;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 49.92px;
+    letter-spacing: 0%;
+    position: relative;
+    top: -92.1rem;
+   text-align: center;
+   box-sizing: 3px;
+  }
+  .ContactLine{
+    position: relative;
+    height: 58.9px;
+    top: -91.8rem;
+    left: 21rem;
+  } 
+  .contactUs{
+    display: flex;
+    position: relative;
+    top: -94.9rem;
+    left: 23rem;
+    
+  }
+  .contactUsP{
+    font-family: space grotesk ;
+    font-size: 19px;
+    position: relative;
+    top: 0.6rem;
+    padding-right: 2rem;
+    padding-left: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .LocationInfos{
+   
+    position: relative;
+    top: -93rem;
+    left: 22rem;
+    width: 640px;
+    
+  }
+  .LocationInfosNd{
+    position: relative;
+    top: -2.78rem;
+    left: 2rem;
+   
+    
+  }
+  .LocationInfoo{
+    display: flex;
+    font-family: space grotesk;
+    position: relative;
+    top: -5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 19.5px;
+    line-height: 47.16px;
+    left: 3rem;
+  }
+  .LocationInfoP{
+    position: relative;
+    top: -0.7rem;
+    padding-left: 0.8rem;
+  }
+  .ReservedRights{
+    font-family: Space grotesk;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 100%;
+    text-transform: uppercase;
+    position: relative;
+    top: -95.8rem;
+    text-align: center;
+  }
