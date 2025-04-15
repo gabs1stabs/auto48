@@ -1,5 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Prepa from '../auto48/Components/preparationComponent';
+import ServiceCarousel from './ServiceCarousel';
 
 export default function Acceuil() {
   const images = [
@@ -10,6 +15,20 @@ export default function Acceuil() {
     '/pics/5.png',
     '/pics/6.png',
     '/pics/7.png',
+  ];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
+  const cards = [
+    { id: 1, title: "Tôlerie", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    { id: 2, title: "Carrosserie", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    { id: 3, title: "Peinture Auto", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    { id: 4, title: "Diagnostics", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." },
+    { id: 5, title: "Mécanique", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry." }
   ];
   
   const navigate = useNavigate();
@@ -34,9 +53,7 @@ export default function Acceuil() {
     setIsDragging(true);
   };
 
-  // Add these useEffect hooks to handle events
   useEffect(() => {
-    // Mouse events
     const handleMouseMove = (event) => {
       if (isDragging) {
         slide(event.clientX);
@@ -47,7 +64,6 @@ export default function Acceuil() {
       setIsDragging(false);
     };
 
-    // Touch events
     const handleTouchMove = (event) => {
       if (isDragging && event.touches.length > 0) {
         slide(event.touches[0].clientX);
@@ -58,20 +74,18 @@ export default function Acceuil() {
       setIsDragging(false);
     };
 
-    // Add event listeners
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
     document.addEventListener('touchmove', handleTouchMove);
     document.addEventListener('touchend', handleTouchEnd);
 
-    // Clean up
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
       document.removeEventListener('touchmove', handleTouchMove);
       document.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [isDragging]); // Only re-run when isDragging changes
+  }, [isDragging]); 
 
   const handleClick = () => {
     navigate("/"); 
@@ -190,16 +204,16 @@ export default function Acceuil() {
         style={{
           clipPath: "polygon(0 0, 94% 0, 100% 20%, 100% 100%, 80% 100%, 6% 100%, 0% 80%, 0% 20%)",
         }}
-        className="bg-gradient-to-r from-[#7a0404] to-[#d10000] text-white font-medium border-none px-4 py-2 text-[14px] font-turret w-[180px] flex items-center gap-2"
+        className="bg-gradient-to-r from-[#7a0404] to-[#d10000] text-white font-medium border-none px-4 py-2 text-[14px] font-turret w-[190px] flex items-center gap-2"
         onClick={handleClick}
       >
-        <img src="/pics/upArrow.png" className="w-5" /> DÉCOUVRIR PLUS
+        <img src="/pics/upArrow.png" className="w-[15px]" /> DÉCOUVRIR PLUS
       </button>
       <div style={{borderTop:"1px solid transparent",
                   borderImage: "linear-gradient(to right, black, white) 1",
                   marginTop:"20px" 
                 }}/>
-      <div className="flex items-center gap-2 mt-5">
+      <div className="flex items-center gap-2 mt-4">
         <img src="/pics/phone-icon.png" alt="Phone icon" className="w-[40px]" />
         <div>
           <div className="text-[13px] font-space font-bold">SERVICE CLIENT</div>
@@ -222,8 +236,8 @@ export default function Acceuil() {
     <div className="m-[10px]">
       <img src="/pics/design-w.png" alt="Design" className="w-[110px] h-[30px]" />
     </div>
-    <div className='font-turret absolute text-white top-[80px] text-[24px]'>" L'EXCELLENCE À CHAQUE RÉPARATION "</div>
-
+    <div className='font-turret absolute text-white top-[80px] text-[28px]'>" L'EXCELLENCE À CHAQUE RÉPARATION "</div>
+    
   </div>
 
 <div className="flex justify-center -mt-[650px]">
@@ -232,12 +246,17 @@ export default function Acceuil() {
     <img src="/pics/frame-back.png" 
           alt="Frame" 
           className="absolute top-0 right-0"/>
+    <div className="absolute top-[190px] left-1/2 transform -translate-x-1/2 w-full">
+      <ServiceCarousel />
+    </div>
   </div>
  
 </div>
-
-
-
+<div className="mt-20 relative" >
+  <div className="relative" style={{ zIndex: 1 }}>
+    <Prepa />
+  </div>
+</div>
 </div>
 
 </div>

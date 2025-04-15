@@ -12,7 +12,7 @@ export default function PressHere() {
           Votre atelier de confiance pour la mécanique générale, l'électricité auto,
            la tôlerie-peinture <br/> et le pneumatique
         </div>
-        <button className='relative top-[50px] left-[565px] w-[170px] h-[50px] rounded-[10px] font-[Turret_Road] font-bold text-white text-[15px] shadow-[5px_5px_0px_white] bg-gradient-to-r from-red-900 via-red-500 to-red-900' onClick={() => navigate("/Navbar")}><b style={{ color: "white" }}>Press here</b></button>
+        <button className='relative top-[50px] left-[565px] w-[170px] h-[50px] rounded-[10px] font-[Turret_Road] font-bold text-white text-[15px] shadow-[5px_5px_0px_white] bg-gradient-to-r from-red-900 via-red-500 to-red-900' onClick={() => navigate("/Acceuil")}><b style={{ color: "white" }}>Press here</b></button>
     </div>
   )
 }

@@ -10,7 +10,7 @@ const languageOptions = [
         <img
           src="/flags/en.png"
           alt="English"
-          style={{ width: "20px", height: "20px", marginRight: "10px" }}
+          style={{ width: "24px", height: "24px", marginRight: "10px" }}
         />
       </div>
     ),
@@ -23,7 +23,7 @@ const languageOptions = [
         <img
           src="/flags/fr.png"
           alt="Français"
-          style={{ width: "20px", height: "20px", marginRight: "10px" }}
+          style={{ width: "24px", height: "24px", marginRight: "10px" }}
         />  
       </div>
     ),
@@ -36,7 +36,7 @@ const languageOptions = [
         <img
           src="/flags/mr.png"
           alt="Morocco"
-          style={{ width: "20px", height: "20px", marginRight: "10px" }}
+          style={{ width: "24px", height: "24px", marginRight: "10px" }}
         />
       </div>
     ),
@@ -70,6 +70,7 @@ export default function LangSwitch() {
   return (
     <div style={{
     width: "140px",
+    
 }}>
       <Select
         options={languageOptions}
@@ -83,6 +84,7 @@ export default function LangSwitch() {
             borderColor: "#ccc",
             border:"none",
             borderRadius: "0px",
+            
           }),
           option: (provided) => ({
             ...provided,
@@ -91,7 +93,7 @@ export default function LangSwitch() {
           }),
           dropdownIndicator: (provided) => ({
             ...provided,
-            padding: "3px", 
+            padding: "2px", 
             width: "20px", 
             height: "24px", 
             marginRight:"3px",
