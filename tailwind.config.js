@@ -17,6 +17,20 @@ module.exports = {
         },
       }
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '3xl': '1700px',
+      '4xl': '1900px',
+      '5xl': '2100px',
+      '6xl': '2300px',
+      '7xl': '2500px',
+      '8xl': '2700px',
+    }
+    
     
   },
   content: ["./src/**/*.{js,jsx}"],

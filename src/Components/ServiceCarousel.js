@@ -21,7 +21,9 @@ export default function ServiceCarousel() {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+              viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2"
+              strokeLinecap="round" strokeLinejoin="round">
           <polyline points="10 16 17 10 10 6"></polyline>
         </svg>
       </div>
@@ -88,8 +90,8 @@ export default function ServiceCarousel() {
 
   return (
     <div>
-      <div className="lg:w-[85%] xl:w-[90%] md:w-[50%] w-[70%] m-auto font-turret h-[150px]">
-        <div className="h-[150px]">
+      <div className="lg:w-[85%] xl:w-[90%] 3xl:w-[80%]  md:w-[50%] w-[70%] m-auto font-turret h-[150px]">
+        <div className="h-[150px] ">
           <style jsx>{`
             .slick-prev:before, .slick-next:before {
               display: none;

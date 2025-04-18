@@ -9,7 +9,7 @@ export default function Navbar() {
   
   return (
     <nav className="w-full z-[1000] mt-2">
-      <div className="w-full font-space flex items-center justify-between bg-gradient-to-r from-[#c23434] to-[#8e0d0d] lg:p-[10px] lg:flex hidden">
+      <div className="w-full font-space  items-center justify-between bg-gradient-to-r from-[#c23434] to-[#8e0d0d] lg:p-[10px] lg:flex hidden">
         <div className="flex items-center lg:gap-2 2xl:gap-3 xl:ml-4 ">
           <a href="https://www.instagram.com/"><img src="/pics/inst1.png" className="lg:h-[30px] lg:w-[30px] 2xl:w-[35px] 2xl:h-[35px] md:h-[26px] md:w-[26px]" /></a>
           <a href="https://www.facebook.com/"><img src="/pics/fb1.png" className="lg:h-[30px] lg:w-[30px]  2xl:w-[35px] 2xl:h-[35px] md:h-[26px] md:w-[26px]" /></a>
@@ -26,7 +26,7 @@ export default function Navbar() {
             <img src="/pics/email1.png" className="lg:h-[20px] lg:w-[26px] 2xl:h-[22px] 2xl:w-[28px]" />
             <span>CONTACT@AUTO48.MA</span>
           </div>
-          <img src="/pics/arr22.png" className=" lg:w-[150px] 2xl:h-[15px] 2xl:w-[250px] h-[13px] xl:mr-12 xl:ml-4 mr-4 " />
+          <img src="/pics/arr22.png" className=" lg:w-[150px] 2xl:h-[15px] 2xl:w-[250px] h-[13px] 3xl:mr-14 xl:mr-12 xl:ml-4 mr-4 " />
         </div>
       </div>
 
@@ -117,13 +117,13 @@ export default function Navbar() {
         </div>
       </div>
       
-      <div className="absolute lg:top-3  2xl:top-4 2xl:left-[1420px] xl:left-[1180px] right-[-50px] hidden lg:block ">
+      <div className="absolute lg:top-3 2xl:top-4 right-[-50px] hidden lg:block ">
         <LangSwitch />
       </div>
       
       <div className="w-full  justify-center font-neo hidden lg:flex">
-        <div className="xl:w-[60%]  flex items-center justify-between relative top-9  ">
-          <ul className="flex skew-x-[15deg] items-center xl:gap-8 2xl:gap-10 gap-4 list-none xl:pl-11 2xl:py-4 py-2 2xl:mr-4 xl:mr-6">
+        <div className="xl:w-[60%] 3xl:w-[55%] flex items-center justify-between relative top-9  ">
+          <ul className="flex skew-x-[15deg] items-center xl:gap-8 2xl:gap-10 gap-4 list-none xl:pl-11 3xl:pl-12 2xl:py-4 py-2 2xl:mr-4 3xl:py-[19px] xl:mr-6 3xl:mr-3">
           <div class="absolute inset-y-0 left-0 w-px bg-gradient-to-r bg-[#c67070]"></div>
           <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-[#c67070] to-transparent"></div>
           <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-[#c67070] to-transparent"></div>
@@ -139,9 +139,9 @@ export default function Navbar() {
           </ul>
           
           <div className="relative left-3 -top-3">
-            <img src="/pics/logo2.png" className="w-[110px] h-[85px] 2xl:w-[130px] 2xl:h-[95px]" />
+            <img src="/pics/logo2.png" className="w-[110px] h-[85px] 2xl:w-[130px] 2xl:h-[95px] 3xl:w-[140px] 3xl:h-[100px]" />
           </div>
-          <ul className="flex skew-x-[-15deg] items-center xl:gap-8 gap-4 2xl:gap-10 list-none lg:pr-8 xl:pr-11 2xl:py-4 py-2 2xl:ml-4 xl:ml-6 ">
+          <ul className="flex skew-x-[-15deg] items-center xl:gap-8 gap-4 2xl:gap-10 list-none lg:pr-8 xl:pr-11 3xl:pr-12 2xl:py-4 3xl:py-[19px] py-2 2xl:ml-4 xl:ml-6  3xl:ml-3 ">
           <div class="absolute inset-y-0 right-0 w-px bg-gradient-to-r bg-[#c67070]"></div>
           <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-l from-[#c67070] to-transparent"></div>
           <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-l from-[#c67070] to-transparent"></div>

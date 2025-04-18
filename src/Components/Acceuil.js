@@ -244,9 +244,9 @@ export default function Acceuil() {
   </div>
 
 <div className="flex justify-center lg:-mt-[680px] xl:-mt-[790px] md:-mt-[600px] mt-[350px]">
-  <div className="relative w-fit">
-    <img src="/pics/rec-back.png" alt="Background" className="block top-0 right-0 h-[200px] sm:h-auto " />
-    <img src="/pics/frame-back.png" className="absolute top-0 right-0 h-[200px] sm:h-auto"/>
+  <div className="relative w-full">
+    <img src="/pics/rec-back.png" alt="Background" className="block top-0 right-0 h-[200px] sm:h-auto 3xl:h-[400px]  w-full" />
+    <img src="/pics/frame-back.png" className="absolute top-0 right-0 h-[200px] sm:h-auto w-full  3xl:h-[400px]"/>
     <div className="absolute md:top-[160px] 2xl:top-[260px] sm:top-[120px] top-[100px] left-1/2 transform -translate-x-1/2 w-full ">
       <ServiceCarousel />
     </div>
