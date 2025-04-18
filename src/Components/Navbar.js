@@ -31,7 +31,7 @@ export default function Navbar() {
       </div>
 
       <div className="lg:hidden">
-        <div className="flex justify-between items-center mx-4 my-4 border-1 border-red-700 p-1">
+        <div className="flex justify-between items-center mx-4 my-4 border border-red-700 p-1">
           <div>
             <LangSwitch1  />
           </div>

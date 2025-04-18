@@ -6,14 +6,21 @@ module.exports = {
         turret: ["Turret Road", 'sans-serif'],
         neo: ["Neo Cybern", 'sans-serif'],
         space: ["Space Grotesk", 'sans-serif'],
+        spaceMed: ["Space Grotesk Meduim", 'sans-serif'],
+        turretBold: ['Turret Road Bold', 'sans-serif'],
       },
       animation:{
-        "loop-scroll":"loop-scroll 12s linear infinite"
+        "loop-scroll":"loop-scroll 12s linear infinite",
+        scrollLeft: 'scrollLeft 10s linear infinite',
       },
       keyframes:{
         "loop-scroll":{
           from:{ transform : "translateX(0)"},
           to:{ transform : "translateX(-50%)"}
+        },
+        scrollLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-40%)' },
         },
       }
     },

@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Prepa from '../auto48/Components/preparationComponent';
 import ServiceCarousel from './ServiceCarousel';
+import HomePga from '../Componenets/HomePage';
 
 
 export default function Acceuil() {
@@ -253,6 +253,9 @@ export default function Acceuil() {
   </div>
 </div>
 
+</div>
+<div className='mt-20 sm:mt-[100px] lg:mt-0'>
+  <HomePga/>
 </div>
 
 
