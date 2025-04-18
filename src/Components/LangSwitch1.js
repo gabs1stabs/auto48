@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 
-const languageOptions = [
+const languageOptions1 = [
   {
     value: "en",
     label: (
@@ -10,7 +10,7 @@ const languageOptions = [
         <img
           src="/flags/en.png"
           alt="English"
-          style={{ width: "24px", height: "24px", marginRight: "10px" ,}}
+          style={{ width: "30px", height: "30px", marginRight: "10px" }}
         />
       </div>
     ),
@@ -23,7 +23,7 @@ const languageOptions = [
         <img
           src="/flags/fr.png"
           alt="Français"
-          style={{ width: "24px", height: "24px", marginRight: "10px" }}
+          style={{ width: "30px", height: "30px", marginRight: "10px" }}
         />
       </div>
     ),
@@ -36,7 +36,7 @@ const languageOptions = [
         <img
           src="/flags/mr.png"
           alt="Morocco"
-          style={{ width: "24px", height: "24px", marginRight: "10px"  }}
+          style={{ width: "30px", height: "30px", marginRight: "10px" }}
         />
       </div>
     ),
@@ -72,11 +72,10 @@ export default function LangSwitch() {
   };
 
   return (
-    <div style={{ width: "150px",
-  }}>
+    <div style={{ width: "150px" }}>
       <Select
-        options={languageOptions}
-        value={languageOptions.find((option) => option.value === selectedLang)}
+        options={languageOptions1}
+        value={languageOptions1.find((option) => option.value === selectedLang)}
         onChange={handleChangeLanguage}
         components={makeAnimated()}
         filterOption={filterOption}
@@ -92,13 +91,13 @@ export default function LangSwitch() {
             ...provided,
             display: "flex",
             alignItems: "center",
-
+            
           }),
           dropdownIndicator: (provided) => ({
             ...provided,
             padding: "2px",
-            width: "20px",
-            height: "22px",
+            width: "22px",
+            height: "24px",
             marginRight: "3px",
             backgroundColor: "#f4f4f4",
             display: "flex",
@@ -109,6 +108,7 @@ export default function LangSwitch() {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
+            
           }),
           menu: (provided) => ({
             ...provided,

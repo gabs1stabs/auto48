@@ -15,21 +15,22 @@ import bgMedia from '../Pics/comingSoon/bgSocialMedias.png';
 import FrstBgLocation from '../Pics/comingSoon/bgLocation.png';
 import NdBgLocation from '../Pics/comingSoon/NdBgLocayion.png';
 import LocationIcon from '../Pics/comingSoon/locationLogo.png';
+import BgComponent from '../Pics/comingSoon/bgComponent.jpg';
 import contactMedia from '../Pics/comingSoon/contactBg.png'
 export default function ComingSoon(){
     return(
         <div className={Styles.container}>
-           <img src={bg} alt="" className={Styles.bg} />
-           <img src={pBg} className={Styles.pbg} alt="" />
+          
+           <img src={BgComponent} className={Styles.pbg} alt="" />
            <img src={companyLogo} className={Styles.CompanyLogo} alt="" />
            {/*contact infos */}
            <div className={Styles.contact}>
                 <div className={Styles.fc}>
-                    <img src={bgMedia}  alt="" />
+                    <img src={bgMedia} className={Styles.bgIcons}  alt="" />
                    <a href="https://web.facebook.com/" target='blank'><img src={fcLogo} className={Styles.bgFc} alt="" /></a> 
                  </div>
                  <div>
-                    <img src={bgMedia} alt="" />
+                    <img src={bgMedia}  className={Styles.bgIcons} alt="" />
                     <a href="https://www.instagram.com/" target='blank'><img src={instaLogo} className={Styles.bgFc} alt="" /></a>
                  </div>
                  <div >
@@ -38,8 +39,8 @@ export default function ComingSoon(){
                  </div>
             </div>
             
-               <div>
-                <img src={redV} className={Styles.redV} alt="" />
+               <div className={Styles.content}>
+               
                 <p className={Styles.comingP}>
                     Coming soon
                 </p>
@@ -75,4 +76,4 @@ export default function ComingSoon(){
            
         </div>
     )
-}
+} 

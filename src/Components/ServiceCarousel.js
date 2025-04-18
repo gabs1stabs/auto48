@@ -5,16 +5,24 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function ServiceCarousel() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isHover, setIsHover] = useState(false);
+
   const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
       <div
         className={className}
-        style={{ ...style, display: 'block', background: 'white', borderRadius: '50%', padding: '1px' }}
+        style={{ ...style, display: 'block', 
+        background: isHover?'white':"#eae3e3a3",
+        clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)'
+        ,border: isHover?"1px solid black":"",
+        padding: '3px' }}
         onClick={onClick}
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="10 16 17 10 10 6"></polyline>
         </svg>
       </div>
     );
@@ -22,14 +30,23 @@ export default function ServiceCarousel() {
 
   const PrevArrow = (props) => {
     const { className, style, onClick } = props;
+    const [isHover, setIsHover] = useState(false);
+
     return (
       <div
         className={className}
-        style={{ ...style, display: 'block', background: 'white', borderRadius: '50%', padding: '1px' }}
+        style={{ ...style, display: 'block', background: isHover?'white':"#eae3e3a3",
+        border: isHover?"1px solid black":"",
+        clipPath: 'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)'
+        , padding: '3px' }}
         onClick={onClick}
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="15 18 9 12 15 6"></polyline>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+        viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" 
+        strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="14 16 7 10 14 6"></polyline>
         </svg>
       </div>
     );
@@ -47,10 +64,10 @@ export default function ServiceCarousel() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
     ]
@@ -71,11 +88,12 @@ export default function ServiceCarousel() {
 
   return (
     <div>
-      <div className="w-[75%] m-auto font-turret h-[150px]">
+      <div className="lg:w-[85%] xl:w-[90%] md:w-[50%] w-[70%] m-auto font-turret h-[150px]">
         <div className="h-[150px]">
           <style jsx>{`
             .slick-prev:before, .slick-next:before {
               display: none;
+
             }
             
             .gradient-bg {
@@ -85,7 +103,8 @@ export default function ServiceCarousel() {
           
           <Slider {...settings}>
             {cards.map((d, index) => (
-              <div key={d.id} className="px-2  ">
+              <div key={d.id} 
+              className="px-2  ">
                 <div  
                 style={{
                   clipPath: "polygon(100% 0%, 100% 60%, 75% 100%, 0 100%, 0 50%, 25% 0%)",
@@ -120,7 +139,7 @@ export default function ServiceCarousel() {
   <div
     style={{
       borderTop: "1px solid transparent",
-      borderImage: "linear-gradient(to right, red, white , transparent) 1",
+      borderImage: "linear-gradient(to right, red,red, white , transparent) 1",
       borderImageSlice: 1
     }}
   />

@@ -31,11 +31,20 @@ import formBg from '../Pics/formBg.png'
 import phoneLogo from '../Pics/phoneLogo.png';
 import mailLogo from '../Pics/mailLogo.png';
 import locationLogo from '../Pics/locationLogo.png';
+
+
 function Prepa(){
+  const scrollToTop=()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  }
    const[LName,setLName]=useState();
     const [FName,setFName]=useState();
     const[phone,setPhone]=useState();
     const[message,setMessage]=useState('');
+
     return(
      <div >
         <div className="container-fluid">
@@ -57,12 +66,8 @@ function Prepa(){
                 <img src={VectorDown} alt="" />
                 <img src={VectorDown} alt="" />
            </div>
-           
-          
-          
           {/*paragraphes descriptions*/}
           <div className="row">
-            
             <div className={`col-12 col-md-6 ${Styles.RepParagraphes}`}>
             <p className={Styles.ReparationP}>Réparation et réglage <br />automobile innovants.</p>
             <p className={Styles.secondLorem}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Donec dolor ante, posuere faucibus elit ut, aliquam.</p>
@@ -101,12 +106,33 @@ function Prepa(){
            <img src={eighthImgInrow} alt="" />
           <img src={ninethImg} alt="" />
           <img src={lastImgInrow} alt="" />
+          {/*duplications f images */}
+          <img src={sixthImage} alt="" />
+           <img src={seventhImgInrow} alt="" />
+           <img src={eighthImgInrow} alt="" />
+           <img src={ninethImg} alt="" />
+           <img src={lastImgInrow} alt="" />
+           <img src={sixthImage} alt="" />
+           <img src={seventhImgInrow} alt="" />
+           <img src={eighthImgInrow} alt="" />
+          <img src={ninethImg} alt="" />
+          <img src={lastImgInrow} alt="" />
+          <img src={sixthImage} alt="" />
+           <img src={seventhImgInrow} alt="" />
+           <img src={eighthImgInrow} alt="" />
+           <img src={ninethImg} alt="" />
+           <img src={lastImgInrow} alt="" />
+           <img src={sixthImage} alt="" />
+           <img src={seventhImgInrow} alt="" />
+           <img src={eighthImgInrow} alt="" />
+          <img src={ninethImg} alt="" />
+          <img src={lastImgInrow} alt="" />
           </div> <br /> <br /> <br />
 
           
           
           
-        
+        <div className={Styles.socialButtons}>
            <img src={BreakLine} className={Styles.BreakLine} alt=""  />
             {/* social media links */}
             <div className={Styles.SocialMedia}>
@@ -120,14 +146,14 @@ function Prepa(){
           <img src={TiktokLogo} alt="" className={Styles.SocialMediaButtons}/>
            </a>
           </div>
-
+          </div>
         
 
         </div>
         {/*second layout */}
-        <div className="row" id='Contact'>
-                           
-                             <button  className={Styles.vectorJ}>
+        <div className="row" >
+                            
+                             <button  className={Styles.vectorJ} onClick={scrollToTop} >
                                <img src={vectorj} alt="" />
                              </button>
                            
@@ -182,9 +208,9 @@ function Prepa(){
                               </div>
                               <div className="row">
                                 
-                                <div className="col-3"></div>
+                                <div className="col-3"></div>  
                                 <div className="col-3 md-col-6">
-                                <p className={Styles.RightsReservedP}>© SOFTCACTUS, Tous les droits sont réservés, 2025</p> 
+                               
                                
                                 </div>
                                 <div className="col-3"></div>
@@ -193,6 +219,7 @@ function Prepa(){
                              
                             </div> 
                            </div>
+                           <footer> <p className={Styles.RightsReservedP}>© SOFTCACTUS, Tous les droits sont réservés, 2025</p> </footer>
  </div>   
    )
 }
